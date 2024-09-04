@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 
 var jsonParser = bodyParser.json()
 var taskList = []
-const PORT = 3000; 
+const PORT = process.env.PORT || 3000; 
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
