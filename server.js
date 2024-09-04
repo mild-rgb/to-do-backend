@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
 
 app.get("/api", (req, res) => {
     res.json({ message: taskList});
-    console.log("data fetched")
+    console.log(taskList)
   });
 
 app.post("/upload", jsonParser, (req, res) =>{
